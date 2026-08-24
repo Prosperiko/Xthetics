@@ -75,6 +75,7 @@
         if (mobileMenu && mobileMenu.classList.contains('active')) {
           mobileMenu.classList.remove('active');
           navToggle.classList.remove('active');
+          document.body.style.overflow = ''; // <-- FIX: re-enable scrolling
         }
       }
     });
@@ -91,7 +92,7 @@
       requestAnimationFrame(() => {
         const scrolled = window.pageYOffset;
         shapes.forEach((shape, i) => {
-          const speed = 0.1 + (i * 0.05);
+          const speed = 3 + (i * 0.05);
           shape.style.transform = `translateY(${scrolled * speed}px)`;
         });
         ticking = false;

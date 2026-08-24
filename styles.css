@@ -1,4 +1,4 @@
-/* ============================================
+/* /* ============================================
    MAGNIFICO — FINAL VERSION (FIXED)
    CSS updated with PROPERLY QUOTED image paths
 
@@ -971,4 +971,4 @@ body {
   .footer { grid-template-columns: 1fr; padding: 60px 24px 40px; }
   .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
   .newsletter { padding: 100px 24px; }
-}
+} 

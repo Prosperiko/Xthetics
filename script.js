@@ -181,7 +181,7 @@
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > 100) {
+    if (currentScroll >= 0) {
       nav.style.background = 'rgba(10, 10, 10, 0.9)';
       nav.style.backdropFilter = 'blur(10px)';
     } else {
